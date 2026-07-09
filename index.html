@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birdie Balz — The Best Snack in Golf</title>
+  <meta name="description" content="Organic protein peanut butter balls, sold in a sleeve of three. Real energy for the back nine — custom-branded for your club." />
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a class="brand" href="#top">
+      <img src="assets/logo.svg" alt="Birdie Balz" width="44" height="44" />
+      <span>Birdie Balz</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#why">Why Birdie</a>
+      <a href="#nutrition">Nutrition</a>
+      <a href="#branding">Your Club</a>
+      <a href="#pricing">Pricing</a>
+      <a class="btn btn-sm" href="#order">Get a Sample Sleeve</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Born at Bandon Dunes · Built for the back nine</p>
+      <h1>The best snack in golf,<br/><span>sold by the sleeve.</span></h1>
+      <p class="lede">
+        Organic peanut butter protein balls — real food energy that keeps your
+        swing sharp from the first tee to the 18th green. Three per sleeve,
+        packaged like the golf balls in your bag.
+      </p>
+      <div class="hero-cta">
+        <a class="btn" href="#order">Order for Your Club</a>
+        <a class="btn btn-ghost" href="#pricing">See Pricing</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>7g</strong> protein</li>
+        <li><strong>3g</strong> fiber</li>
+        <li><strong>160</strong> clean calories</li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <!-- Drop a real photo at assets/product-hero.jpg and it replaces the mockup automatically -->
+      <img src="assets/product-hero.jpg" alt="Birdie Balz protein balls" class="hero-photo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="sleeve" style="display:none">
+        <img src="assets/logo.svg" alt="" class="sleeve-logo" />
+        <span class="sleeve-tag">3 · PROTEIN BALLS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Organic Ingredients</span><span>·</span><span>No Junk</span><span>·</span>
+      <span>Golfer-Fueled</span><span>·</span><span>Custom Club Branding</span><span>·</span>
+      <span>Made in Small Batches</span><span>·</span>
+      <span>Organic Ingredients</span><span>·</span><span>No Junk</span><span>·</span>
+      <span>Golfer-Fueled</span><span>·</span><span>Custom Club Branding</span><span>·</span>
+      <span>Made in Small Batches</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- GALLERY (drop real photos into assets/; empty slots hide themselves) -->
+  <section class="gallery" id="gallery">
+    <img src="assets/product-1.jpg" alt="Birdie Balz protein ball closeup" onerror="this.remove()" />
+    <img src="assets/product-2.jpg" alt="Sleeve of three Birdie Balz" onerror="this.remove()" />
+    <img src="assets/product-3.jpg" alt="Birdie Balz on the course" onerror="this.remove()" />
+  </section>
+
+  <!-- WHY -->
+  <section id="why" class="section">
+    <div class="section-head">
+      <p class="kicker">Why Birdie Balz</p>
+      <h2>Snack food doesn't belong on a golf course. Fuel does.</h2>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card-ic">⚡</div>
+        <h3>Steady energy, no crash</h3>
+        <p>Slow-burn carbs, healthy fats, and plant fiber — so you're as strong on 17 as you were on 2. No sugar spike, no mid-round fade.</p>
+      </article>
+      <article class="card">
+        <div class="card-ic">🌱</div>
+        <h3>Organic &amp; clean</h3>
+        <p>Real peanut butter, oats, flax, chia, and honey. Ingredients you can pronounce — nothing artificial, no fillers, no junk.</p>
+      </article>
+      <article class="card">
+        <div class="card-ic">💪</div>
+        <h3>Macros that make sense</h3>
+        <p>7g of protein and 3g of fiber per ball keep you full through a five-hour round without weighing you down over the ball.</p>
+      </article>
+      <article class="card">
+        <div class="card-ic">⛳</div>
+        <h3>Pocketable &amp; pro-shop ready</h3>
+        <p>Each ball is golf-ball sized and sold three-to-a-sleeve — drops right into the clubhouse, halfway house, or your cart bag.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- BRANDING -->
+  <section id="branding" class="section section-alt">
+    <div class="split">
+      <div class="split-copy">
+        <p class="kicker">Make it your club's</p>
+        <h2>Your logo. Your sleeve. Your pro shop's newest bestseller.</h2>
+        <p class="body">
+          We print your club's logo as the sleeve label, so every three-pack looks
+          like it was made in-house. Members grab a piece of the club they love —
+          you get a high-margin, healthy snack with zero kitchen work.
+        </p>
+        <ul class="checklist">
+          <li>Free custom logo sticker &amp; sleeve design</li>
+          <li>Free sample sleeves for your pro shop and halfway house</li>
+          <li>Wholesale pricing — you set the retail markup</li>
+          <li>Small-batch fresh, delivered on a schedule you choose</li>
+        </ul>
+        <a class="btn" href="#order">Get Free Samples for Your Club</a>
+      </div>
+      <div class="split-art">
+        <div class="club-tile club-a"><span>YOUR<br/>CLUB</span></div>
+        <div class="club-tile club-b"><span>PINE<br/>RIDGE</span></div>
+        <div class="club-tile club-c"><span>THE<br/>LINKS</span></div>
+        <div class="club-tile club-d"><span>OAK<br/>HOLLOW</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUTRITION -->
+  <section id="nutrition" class="section">
+    <div class="section-head">
+      <p class="kicker">What's inside</p>
+      <h2>Nothing to hide. Everything to gain.</h2>
+    </div>
+    <div class="nutri-wrap">
+      <div class="nutri-facts">
+        <div class="nf-title">Nutrition Facts</div>
+        <div class="nf-sub">3 servings per container</div>
+        <div class="nf-row nf-serving"><span>Serving size</span><strong>1 ball (33g)</strong></div>
+        <div class="nf-bar"></div>
+        <div class="nf-small">Amount per serving</div>
+        <div class="nf-cal"><span>Calories</span><span>160</span></div>
+        <div class="nf-rule"></div>
+        <div class="nf-dv">% Daily Value*</div>
+        <div class="nf-line"><span><b>Total Fat</b> 8g</span><b>11%</b></div>
+        <div class="nf-line nf-indent"><span>Saturated Fat 1.5g</span><b>7%</b></div>
+        <div class="nf-line nf-indent"><span><i>Trans</i> Fat 0g</span><b></b></div>
+        <div class="nf-line"><span><b>Cholesterol</b> 5mg</span><b>2%</b></div>
+        <div class="nf-line"><span><b>Sodium</b> 45mg</span><b>2%</b></div>
+        <div class="nf-line"><span><b>Total Carbohydrate</b> 14g</span><b>5%</b></div>
+        <div class="nf-line nf-indent"><span>Dietary Fiber 3g</span><b>10%</b></div>
+        <div class="nf-line nf-indent"><span>Total Sugars 7g</span><b></b></div>
+        <div class="nf-line nf-indent2"><span>Includes 6g Added Sugars</span><b>13%</b></div>
+        <div class="nf-line nf-protein"><span><b>Protein</b> 7g</span><b>14%</b></div>
+        <div class="nf-rule"></div>
+        <div class="nf-line nf-tiny"><span>Vitamin D 0mcg</span><b>0%</b></div>
+        <div class="nf-line nf-tiny"><span>Calcium 27mg</span><b>2%</b></div>
+        <div class="nf-line nf-tiny"><span>Iron 0.8mg</span><b>4%</b></div>
+        <div class="nf-line nf-tiny"><span>Potassium 130mg</span><b>3%</b></div>
+        <div class="nf-foot">* The % Daily Value tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</div>
+      </div>
+      <div class="nutri-copy">
+        <h3>Made from a short list of real ingredients</h3>
+        <div class="ing-grid">
+          <span>Organic peanut butter</span>
+          <span>Rolled oats</span>
+          <span>Ground flaxseed</span>
+          <span>Chia seeds</span>
+          <span>Local honey</span>
+          <span>Whey &amp; plant protein</span>
+          <span>Sea salt</span>
+          <span>Dark chocolate chips</span>
+        </div>
+        <p class="body">
+          That's it. No preservatives, no artificial sweeteners, no mystery
+          powders. The kind of snack your trainer <em>and</em> your playing
+          partners will approve of.
+        </p>
+        <p class="fineprint">Contains peanuts, tree nuts, and milk. Made in a facility that handles nuts. Nutrition panel is representative and finalized per recipe batch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section section-alt">
+    <div class="section-head">
+      <p class="kicker">Preliminary pricing</p>
+      <h2>Anchored at $6 a sleeve. The more you order, the less you pay.</h2>
+      <p class="section-note">Every sleeve is 3 protein balls. Bulk and weekly-subscription pricing steps down with volume — and never drops below $4.50 a sleeve. Custom club branding is always free.</p>
+    </div>
+    <div class="pricing">
+      <!-- 1: anchor single sleeve -->
+      <article class="price-card">
+        <h3>By the Sleeve</h3>
+        <p class="price">$6<span>/sleeve</span></p>
+        <p class="price-sub">Our anchor price · 3 balls per sleeve</p>
+        <ul>
+          <li>Perfect for pro-shop &amp; halfway-house shelves</li>
+          <li>Free sample sleeves for clubs evaluating</li>
+          <li>Free custom club branding</li>
+          <li>No minimum to get started</li>
+        </ul>
+        <a class="btn btn-ghost" href="#order">Request Free Samples</a>
+      </article>
+
+      <!-- 2: interactive one-time bulk order -->
+      <article class="price-card featured">
+        <div class="badge">Bulk order</div>
+        <h3>One-Time Order</h3>
+        <p class="price"><span class="price-per" id="bulkPer">$6.00</span><span>/sleeve</span></p>
+        <p class="price-sub">Slide to your quantity — price drops with volume</p>
+        <div class="calc">
+          <label for="bulkQty"><span>Sleeves</span><b id="bulkQtyLabel">6</b></label>
+          <input type="range" id="bulkQty" min="1" max="60" step="1" value="6" />
+          <div class="calc-total">
+            <span>Order total</span><strong id="bulkTotal">$33.00</strong>
+          </div>
+          <p class="calc-note" id="bulkTier">6–11 sleeves · $5.50 each</p>
+        </div>
+        <a class="btn" href="#order">Order This Amount</a>
+      </article>
+
+      <!-- 3: interactive weekly subscription -->
+      <article class="price-card">
+        <div class="badge badge-alt">Best value</div>
+        <h3>Season Subscription</h3>
+        <p class="price"><span class="price-per" id="subPer">$5.00</span><span>/sleeve</span></p>
+        <p class="price-sub">Fresh delivery every week, all season</p>
+        <div class="calc">
+          <label for="subQty"><span>Sleeves / week</span><b id="subQtyLabel">12</b></label>
+          <input type="range" id="subQty" min="3" max="60" step="1" value="12" />
+          <label for="subDay" class="calc-day-label">Delivery day</label>
+          <select id="subDay" class="calc-day">
+            <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+            <option selected>Thursday</option><option>Friday</option><option>Saturday</option>
+          </select>
+          <div class="calc-total">
+            <span>Per week</span><strong id="subWeek">$60.00</strong>
+          </div>
+          <p class="calc-note" id="subTier">12–23/wk · $5.00 each · delivered Thursday</p>
+        </div>
+        <a class="btn btn-ghost" href="#order">Start a Subscription</a>
+      </article>
+    </div>
+    <p class="pricing-foot">Prices are preliminary intro pricing while we onboard our first clubs. Direct-to-golfer single-sleeve checkout is coming soon — join the list below.</p>
+  </section>
+
+  <!-- ORDER / CONTACT -->
+  <section id="order" class="section">
+    <div class="order-box">
+      <div class="order-copy">
+        <p class="kicker">Let's talk</p>
+        <h2>Get Birdie Balz in your pro shop</h2>
+        <p class="body">Tell us about your club and we'll send a free branded sample sleeve and a quick quote. First round of pitches is happening now.</p>
+        <p class="order-contact">Prefer email? <a href="mailto:hello@birdieballz.com">hello@birdieballz.com</a></p>
+      </div>
+      <!-- Leads email straight to you via Formspree. Replace FORM_ID with your endpoint
+           from formspree.io (free): create a form, set the notify email, paste the ID. -->
+      <form class="order-form" id="orderForm" action="https://formspree.io/f/FORM_ID" method="POST">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" required placeholder="Jordan Fairway" />
+        </div>
+        <div class="field">
+          <label for="club">Club / course</label>
+          <input id="club" name="club" required placeholder="Pine Ridge Golf Club" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@club.com" />
+        </div>
+        <div class="field">
+          <label for="interest">I'm interested in</label>
+          <select id="interest" name="interest">
+            <option>Free sample sleeves</option>
+            <option>A club case</option>
+            <option>Season volume pricing</option>
+            <option>Just keeping in touch</option>
+          </select>
+        </div>
+        <input type="hidden" name="_subject" value="New Birdie Balz club lead 🏌️" />
+        <button class="btn btn-block" type="submit">Send it →</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="foot-brand">
+      <img src="assets/logo.svg" alt="Birdie Balz" width="52" height="52" />
+      <div>
+        <strong>Birdie Balz</strong>
+        <span>The best snack in golf.</span>
+      </div>
+    </div>
+    <div class="foot-links">
+      <a href="#why">Why Birdie</a>
+      <a href="#nutrition">Nutrition</a>
+      <a href="#branding">Your Club</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#order">Order</a>
+    </div>
+    <p class="foot-fine">© 2026 Birdie Balz · Small-batch made with real ingredients · Preliminary pricing subject to change</p>
+  </footer>
+
+  <script>
+    // Submits the lead via fetch so the golfer stays on the page (no redirect).
+    // Until you paste a real Formspree ID it runs in demo mode and just confirms.
+    var form = document.getElementById('orderForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var note = document.getElementById('formNote');
+      var first = (form.name.value || 'there').split(' ')[0];
+      var club = form.club.value || 'your club';
+      var demo = form.action.indexOf('FORM_ID') !== -1;
+      if (demo){
+        note.textContent = "Thanks, " + first + "! (Demo mode — add your Formspree ID to send this to your inbox.) We'll be in touch about " + club + ".";
+        note.className = 'form-note ok';
+        form.reset();
+        return;
+      }
+      note.textContent = "Sending…"; note.className = 'form-note';
+      fetch(form.action, { method:'POST', body:new FormData(form), headers:{Accept:'application/json'} })
+        .then(function(r){
+          if(r.ok){ note.textContent = "Thanks, " + first + "! We'll be in touch about " + club + " within a day."; note.className='form-note ok'; form.reset(); }
+          else { note.textContent = "Hmm, something went wrong — email us at hello@birdieballz.com."; note.className='form-note'; }
+        })
+        .catch(function(){ note.textContent = "Network hiccup — email us at hello@birdieballz.com."; note.className='form-note'; });
+    });
+
+    // ---- Pricing calculators. Anchor $6, hard floor $4.50. ----
+    function money(n){ return '$' + n.toFixed(2); }
+
+    // One-time bulk: price/sleeve steps down by quantity
+    var bulkTiers = [
+      {min:24, price:4.75, label:'24+ sleeves'},
+      {min:12, price:5.00, label:'12–23 sleeves'},
+      {min:6,  price:5.50, label:'6–11 sleeves'},
+      {min:1,  price:6.00, label:'1–5 sleeves'}
+    ];
+    // Weekly subscription: rewards commitment, bottoms out at the $4.50 floor
+    var subTiers = [
+      {min:24, price:4.50, label:'24+/wk'},
+      {min:12, price:4.75, label:'12–23/wk'},
+      {min:6,  price:5.00, label:'6–11/wk'},
+      {min:3,  price:5.50, label:'3–5/wk'}
+    ];
+    function tierFor(tiers, qty){ for(var i=0;i<tiers.length;i++){ if(qty>=tiers[i].min) return tiers[i]; } return tiers[tiers.length-1]; }
+
+    var bulkQty=document.getElementById('bulkQty');
+    function updateBulk(){
+      var q=+bulkQty.value, t=tierFor(bulkTiers,q);
+      document.getElementById('bulkQtyLabel').textContent=q;
+      document.getElementById('bulkPer').textContent=money(t.price);
+      document.getElementById('bulkTotal').textContent=money(q*t.price);
+      document.getElementById('bulkTier').textContent=t.label+' · '+money(t.price)+' each';
+    }
+    bulkQty.addEventListener('input',updateBulk); updateBulk();
+
+    var subQty=document.getElementById('subQty'), subDay=document.getElementById('subDay');
+    function updateSub(){
+      var q=+subQty.value, t=tierFor(subTiers,q), day=subDay.value;
+      document.getElementById('subQtyLabel').textContent=q;
+      document.getElementById('subPer').textContent=money(t.price);
+      document.getElementById('subWeek').textContent=money(q*t.price);
+      document.getElementById('subTier').textContent=t.label+' · '+money(t.price)+' each · delivered '+day;
+    }
+    subQty.addEventListener('input',updateSub); subDay.addEventListener('change',updateSub); updateSub();
+  </script>
+</body>
+</html>

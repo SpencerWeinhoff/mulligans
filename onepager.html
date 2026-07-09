@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Birdie Balz — Club Sales Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--green-900:#132e22;--green-800:#1B4332;--green-700:#2D6A4F;--cream:#F7F3E9;--gold:#E9C46A;--muted:#5c6b60;--line:#e2dcc9}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;color:#20241f;background:#d8d2c2;padding:2rem}
+  h1,h2,h3{font-family:'Fraunces',serif}
+  .page{width:8.5in;min-height:11in;margin:0 auto;background:var(--cream);box-shadow:0 10px 40px rgba(0,0,0,.2);padding:.6in;display:flex;flex-direction:column;gap:.42in}
+  .print-hint{max-width:8.5in;margin:0 auto 1rem;text-align:center;color:#333;font-size:.9rem}
+  .print-hint button{font:inherit;font-weight:600;background:var(--green-700);color:#fff;border:0;border-radius:999px;padding:.5rem 1.2rem;cursor:pointer;margin-left:.4rem}
+
+  header{display:flex;align-items:center;gap:1rem;border-bottom:3px solid var(--green-800);padding-bottom:.3in}
+  header img{width:84px;height:84px}
+  .brandblock strong{font-family:'Fraunces',serif;font-weight:900;font-size:2rem;color:var(--green-900);display:block;line-height:1}
+  .brandblock span{color:var(--green-700);font-weight:600;letter-spacing:.02em}
+
+  .hero-line h1{font-size:1.9rem;color:var(--green-900);line-height:1.1}
+  .hero-line p{color:var(--muted);margin-top:.35rem;font-size:1.02rem}
+
+  .cols{display:grid;grid-template-columns:1.3fr .9fr;gap:.4in}
+  .benefits li{list-style:none;padding:.35rem 0 .35rem 1.5rem;position:relative;font-size:.98rem;border-bottom:1px solid var(--line)}
+  .benefits li::before{content:"⛳";position:absolute;left:0}
+  .benefits b{color:var(--green-800)}
+
+  .facts{background:#fff;border:2px solid var(--green-800);border-radius:10px;padding:1rem}
+  .facts h3{color:var(--green-800);font-size:1.05rem;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.05em}
+  .macro{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:.3rem 0;font-size:.95rem}
+  .macro b{font-family:'Fraunces',serif}
+
+  .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:.25in}
+  .tier{border:1.5px solid var(--line);border-radius:10px;padding:.9rem;text-align:center;background:#fff}
+  .tier.feat{border:2px solid var(--gold);background:#fffdf6}
+  .tier h4{font-family:'Fraunces',serif;color:var(--green-800);font-size:1.05rem}
+  .tier .amt{font-family:'Fraunces',serif;font-weight:900;font-size:1.7rem;color:var(--green-900);margin:.2rem 0}
+  .tier small{color:var(--muted);font-size:.8rem;display:block}
+
+  .cta{margin-top:auto;background:var(--green-800);color:var(--cream);border-radius:12px;padding:.9rem 1.1rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+  .cta strong{font-family:'Fraunces',serif;font-size:1.15rem}
+  .cta .contact{font-size:.95rem;text-align:right;opacity:.95}
+  .cta .contact a{color:var(--gold);text-decoration:none}
+  .sectlabel{text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:700;color:var(--green-700);margin-bottom:.4rem}
+
+  @media print{
+    @page{size:letter;margin:0}
+    body{background:#fff;padding:0}
+    .print-hint{display:none}
+    .page{box-shadow:none;margin:0;width:100%;min-height:100vh}
+  }
+</style>
+</head>
+<body>
+  <p class="print-hint">This is your printable club sales sheet. <button onclick="window.print()">Print / Save as PDF</button></p>
+
+  <div class="page">
+    <header>
+      <img src="assets/logo.svg" alt="Birdie Balz" />
+      <div class="brandblock">
+        <strong>Birdie Balz</strong>
+        <span>The best snack in golf — sold by the sleeve.</span>
+      </div>
+    </header>
+
+    <div class="hero-line">
+      <h1>Organic protein fuel your members will actually want.</h1>
+      <p>Golf-ball-sized peanut butter protein balls, three to a sleeve — branded with <b>your club's logo</b>. High margin for your shop, real energy for the round.</p>
+    </div>
+
+    <div class="cols">
+      <div>
+        <p class="sectlabel">Why it sells</p>
+        <ul class="benefits">
+          <li><b>Steady energy, no crash</b> — slow-burn carbs + healthy fats for all 18.</li>
+          <li><b>Organic &amp; clean</b> — peanut butter, oats, flax, chia, honey. No junk.</li>
+          <li><b>Smart macros</b> — 7g protein &amp; 3g fiber per ball keeps golfers full.</li>
+          <li><b>Your brand</b> — free custom logo sleeve; looks made in-house.</li>
+          <li><b>Grab-and-go</b> — perfect for the pro shop, halfway house &amp; cart bag.</li>
+        </ul>
+      </div>
+      <div class="facts">
+        <h3>Per ball (33g)</h3>
+        <div class="macro"><span>Calories</span><b>160</b></div>
+        <div class="macro"><span>Protein</span><b>7g</b></div>
+        <div class="macro"><span>Fiber</span><b>3g</b></div>
+        <div class="macro"><span>Total Fat</span><b>8g</b></div>
+        <div class="macro"><span>Added Sugars</span><b>6g</b></div>
+        <div class="macro" style="border:0"><span>Sodium</span><b>45mg</b></div>
+      </div>
+    </div>
+
+    <div>
+      <p class="sectlabel">Preliminary pricing · anchored at $6/sleeve · never below $4.50</p>
+      <div class="pricing">
+        <div class="tier">
+          <h4>By the Sleeve</h4>
+          <div class="amt">$6.00</div>
+          <small>Anchor price · 3 balls per sleeve · free samples for clubs</small>
+        </div>
+        <div class="tier feat">
+          <h4>One-Time Bulk</h4>
+          <div class="amt">$6 → $4.75</div>
+          <small>Per-sleeve drops with quantity: 6+ $5.50 · 12+ $5.00 · 24+ $4.75</small>
+        </div>
+        <div class="tier">
+          <h4>Season Subscription</h4>
+          <div class="amt">$5.50 → $4.50</div>
+          <small>Weekly delivery, your day · 6+/wk $5.00 · 12+ $4.75 · 24+ $4.50</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <strong>Let's get Birdie Balz in your pro shop.</strong>
+      <div class="contact">
+        birdieballz.com · <a href="mailto:hello@birdieballz.com">hello@birdieballz.com</a><br/>
+        Free sample sleeve for your shop — just ask.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

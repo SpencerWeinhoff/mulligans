@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Birdie Balz logo">
+  <defs>
+    <radialGradient id="ball" cx="38%" cy="34%" r="72%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f3efe2"/>
+      <stop offset="100%" stop-color="#ddd6c2"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D6A4F"/>
+      <stop offset="100%" stop-color="#1B4332"/>
+    </linearGradient>
+    <path id="topArc" d="M 60 200 A 140 140 0 0 1 340 200" fill="none"/>
+    <path id="botArc" d="M 66 200 A 134 134 0 0 0 334 200" fill="none"/>
+  </defs>
+
+  <!-- outer badge -->
+  <circle cx="200" cy="200" r="196" fill="url(#ring)"/>
+  <circle cx="200" cy="200" r="196" fill="none" stroke="#E9C46A" stroke-width="4"/>
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#E9C46A" stroke-width="2" opacity="0.5"/>
+
+  <!-- curved brand text -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700" fill="#F7F3E9" letter-spacing="3">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">BIRDIE&#160;BALZ</textPath>
+  </text>
+  <text font-family="Georgia, serif" font-size="20" font-weight="600" fill="#E9C46A" letter-spacing="6">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">PROTEIN&#160;&#183;&#160;FUEL</textPath>
+  </text>
+
+  <!-- golf ball -->
+  <circle cx="200" cy="205" r="86" fill="url(#ball)"/>
+  <g fill="#cfc6ac" opacity="0.75">
+    <circle cx="176" cy="188" r="6"/><circle cx="200" cy="182" r="6"/><circle cx="224" cy="188" r="6"/>
+    <circle cx="164" cy="210" r="6"/><circle cx="188" cy="206" r="6"/><circle cx="212" cy="206" r="6"/><circle cx="236" cy="210" r="6"/>
+    <circle cx="176" cy="232" r="6"/><circle cx="200" cy="234" r="6"/><circle cx="224" cy="232" r="6"/>
+    <circle cx="200" cy="256" r="6"/>
+  </g>
+
+  <!-- birdie: little swoosh bird over the ball -->
+  <path d="M150 176 C176 150 210 150 232 168 C214 164 196 170 184 184 C204 178 222 182 236 194
+           C214 190 190 196 172 210 C160 200 150 190 150 176 Z" fill="#2D6A4F"/>
+  <circle cx="243" cy="166" r="5" fill="#E9C46A"/>
+</svg>
