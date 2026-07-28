@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Birdie Balz logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Mulligans logo">
   <defs>
     <radialGradient id="ball" cx="38%" cy="34%" r="72%">
       <stop offset="0%" stop-color="#ffffff"/>
@@ -20,7 +20,7 @@
 
   <!-- curved brand text -->
   <text font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700" fill="#F7F3E9" letter-spacing="3">
-    <textPath href="#topArc" startOffset="50%" text-anchor="middle">BIRDIE&#160;BALZ</textPath>
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">MULLIGANS</textPath>
   </text>
   <text font-family="Georgia, serif" font-size="20" font-weight="600" fill="#E9C46A" letter-spacing="6">
     <textPath href="#botArc" startOffset="50%" text-anchor="middle">PROTEIN&#160;&#183;&#160;FUEL</textPath>
@@ -35,7 +35,7 @@
     <circle cx="200" cy="256" r="6"/>
   </g>
 
-  <!-- birdie: little swoosh bird over the ball -->
+  <!-- little bird swoosh over the ball -->
   <path d="M150 176 C176 150 210 150 232 168 C214 164 196 170 184 184 C204 178 222 182 236 194
            C214 190 190 196 172 210 C160 200 150 190 150 176 Z" fill="#2D6A4F"/>
   <circle cx="243" cy="166" r="5" fill="#E9C46A"/>

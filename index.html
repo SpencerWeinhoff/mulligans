@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Birdie Balz — The Best Snack in Golf</title>
+  <title>Mulligans — The Best Snack in Golf</title>
   <meta name="description" content="Organic protein peanut butter balls, sold in a sleeve of three. Real energy for the back nine — custom-branded for your club." />
   <link rel="icon" href="assets/logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,11 +16,11 @@
   <!-- NAV -->
   <header class="nav">
     <a class="brand" href="#top">
-      <img src="assets/logo.svg" alt="Birdie Balz" width="44" height="44" />
-      <span>Birdie Balz</span>
+      <img src="assets/logo.svg" alt="Mulligans" width="44" height="44" />
+      <span>Mulligans</span>
     </a>
     <nav class="nav-links">
-      <a href="#why">Why Birdie</a>
+      <a href="#why">Why Mulligans</a>
       <a href="#nutrition">Nutrition</a>
       <a href="#branding">Your Club</a>
       <a href="#pricing">Pricing</a>
@@ -50,7 +50,7 @@
     </div>
     <div class="hero-art">
       <!-- Drop a real photo at assets/product-hero.jpg and it replaces the mockup automatically -->
-      <img src="assets/product-hero.jpg" alt="Birdie Balz protein balls" class="hero-photo"
+      <img src="assets/product-hero.jpg" alt="Mulligans protein balls" class="hero-photo"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
       <div class="sleeve" style="display:none">
         <img src="assets/logo.svg" alt="" class="sleeve-logo" />
@@ -73,15 +73,15 @@
 
   <!-- GALLERY (drop real photos into assets/; empty slots hide themselves) -->
   <section class="gallery" id="gallery">
-    <img src="assets/product-1.jpg" alt="Birdie Balz protein ball closeup" onerror="this.remove()" />
-    <img src="assets/product-2.jpg" alt="Sleeve of three Birdie Balz" onerror="this.remove()" />
-    <img src="assets/product-3.jpg" alt="Birdie Balz on the course" onerror="this.remove()" />
+    <img src="assets/product-1.jpg" alt="Mulligans protein ball closeup" onerror="this.remove()" />
+    <img src="assets/product-2.jpg" alt="Sleeve of three Mulligans" onerror="this.remove()" />
+    <img src="assets/product-3.jpg" alt="Mulligans on the course" onerror="this.remove()" />
   </section>
 
   <!-- WHY -->
   <section id="why" class="section">
     <div class="section-head">
-      <p class="kicker">Why Birdie Balz</p>
+      <p class="kicker">Why Mulligans</p>
       <h2>Snack food doesn't belong on a golf course. Fuel does.</h2>
     </div>
     <div class="cards">
@@ -260,9 +260,9 @@
     <div class="order-box">
       <div class="order-copy">
         <p class="kicker">Let's talk</p>
-        <h2>Get Birdie Balz in your pro shop</h2>
+        <h2>Get Mulligans in your pro shop</h2>
         <p class="body">Tell us about your club and we'll send a free branded sample sleeve and a quick quote. First round of pitches is happening now.</p>
-        <p class="order-contact">Prefer email? <a href="mailto:hello@birdieballz.com">hello@birdieballz.com</a></p>
+        <p class="order-contact">Prefer email? <a href="mailto:hello@mulligansgolf.com">hello@mulligansgolf.com</a></p>
       </div>
       <!-- Leads email straight to you via Formspree. Replace FORM_ID with your endpoint
            from formspree.io (free): create a form, set the notify email, paste the ID. -->
@@ -288,7 +288,7 @@
             <option>Just keeping in touch</option>
           </select>
         </div>
-        <input type="hidden" name="_subject" value="New Birdie Balz club lead 🏌️" />
+        <input type="hidden" name="_subject" value="New Mulligans club lead 🏌️" />
         <button class="btn btn-block" type="submit">Send it →</button>
         <p class="form-note" id="formNote"></p>
       </form>
@@ -298,20 +298,20 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="foot-brand">
-      <img src="assets/logo.svg" alt="Birdie Balz" width="52" height="52" />
+      <img src="assets/logo.svg" alt="Mulligans" width="52" height="52" />
       <div>
-        <strong>Birdie Balz</strong>
+        <strong>Mulligans</strong>
         <span>The best snack in golf.</span>
       </div>
     </div>
     <div class="foot-links">
-      <a href="#why">Why Birdie</a>
+      <a href="#why">Why Mulligans</a>
       <a href="#nutrition">Nutrition</a>
       <a href="#branding">Your Club</a>
       <a href="#pricing">Pricing</a>
       <a href="#order">Order</a>
     </div>
-    <p class="foot-fine">© 2026 Birdie Balz · Small-batch made with real ingredients · Preliminary pricing subject to change</p>
+    <p class="foot-fine">© 2026 Mulligans · Small-batch made with real ingredients · Preliminary pricing subject to change</p>
   </footer>
 
   <script>
@@ -334,9 +334,9 @@
       fetch(form.action, { method:'POST', body:new FormData(form), headers:{Accept:'application/json'} })
         .then(function(r){
           if(r.ok){ note.textContent = "Thanks, " + first + "! We'll be in touch about " + club + " within a day."; note.className='form-note ok'; form.reset(); }
-          else { note.textContent = "Hmm, something went wrong — email us at hello@birdieballz.com."; note.className='form-note'; }
+          else { note.textContent = "Hmm, something went wrong — email us at hello@mulligansgolf.com."; note.className='form-note'; }
         })
-        .catch(function(){ note.textContent = "Network hiccup — email us at hello@birdieballz.com."; note.className='form-note'; });
+        .catch(function(){ note.textContent = "Network hiccup — email us at hello@mulligansgolf.com."; note.className='form-note'; });
     });
 
     // ---- Pricing calculators. Anchor $6, hard floor $4.50. ----

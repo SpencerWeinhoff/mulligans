@@ -1,4 +1,4 @@
-# Birdie Balz 🏌️
+# Mulligans 🏌️
 
 The best snack in golf — landing page + sales one-pager.
 
@@ -6,7 +6,7 @@ The best snack in golf — landing page + sales one-pager.
 - `index.html` — landing page (hero, benefits, custom-branding pitch, nutrition, interactive pricing, lead form)
 - `onepager.html` — printable club sales sheet → open it and click **Print / Save as PDF**
 - `styles.css` — landing page styles
-- `assets/logo.svg` — Birdie Balz emblem (also the favicon)
+- `assets/logo.svg` — Mulligans emblem (also the favicon)
 
 ## Live site
 Hosted on GitHub Pages. Every push to `main` redeploys automatically.
