@@ -280,6 +280,10 @@
           <input id="email" name="email" type="email" required placeholder="you@club.com" />
         </div>
         <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="Phone Number" type="tel" required placeholder="(719) 555-0100" />
+        </div>
+        <div class="field">
           <label for="interest">I'm interested in</label>
           <select id="interest" name="interest">
             <option>Free sample sleeves</option>
@@ -321,8 +325,11 @@
     form.addEventListener('submit', function(e){
       e.preventDefault();
       var note = document.getElementById('formNote');
-      var first = (form.name.value || 'there').split(' ')[0];
-      var club = form.club.value || 'your club';
+      var first = (document.getElementById('name').value || 'there').split(' ')[0];
+      var club = document.getElementById('club').value || 'your club';
+      // Formspree's Phone Number field is numeric-only — strip anything that isn't a digit
+      var phone = document.getElementById('phone');
+      phone.value = phone.value.replace(/\D/g, '');
       var demo = form.action.indexOf('FORM_ID') !== -1;
       if (demo){
         note.textContent = "Thanks, " + first + "! (Demo mode — add your Formspree ID to send this to your inbox.) We'll be in touch about " + club + ".";
