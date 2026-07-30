@@ -268,12 +268,21 @@
            from formspree.io (free): create a form, set the notify email, paste the ID. -->
       <form class="order-form" id="orderForm" action="https://formspree.io/f/xqernglp" method="POST">
         <div class="field">
+          <label for="role">I'm a…</label>
+          <select id="role" name="I am a" required>
+            <option value="" disabled selected>Select one…</option>
+            <option>Individual golfer</option>
+            <option>Golf course / club</option>
+            <option>Retailer looking to resell</option>
+          </select>
+        </div>
+        <div class="field">
           <label for="name">Your name</label>
           <input id="name" name="name" required placeholder="Jordan Fairway" />
         </div>
         <div class="field">
-          <label for="club">Club / course</label>
-          <input id="club" name="club" required placeholder="Pine Ridge Golf Club" />
+          <label for="club">Club / course / company <span class="opt">(if any)</span></label>
+          <input id="club" name="club" placeholder="Pine Ridge Golf Club" />
         </div>
         <div class="field">
           <label for="email">Email</label>

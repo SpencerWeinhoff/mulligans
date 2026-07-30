@@ -190,6 +190,7 @@ img{display:block}
 .order-form{display:flex;flex-direction:column;gap:1rem}
 .field{display:flex;flex-direction:column;gap:.35rem}
 .field label{font-size:.85rem;font-weight:600;color:var(--green-800)}
+.field label .opt{font-weight:400;color:var(--muted)}
 .field input,.field select{padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:12px;font:inherit;background:var(--cream);transition:.15s}
 .field input:focus,.field select:focus{outline:none;border-color:var(--green-500);background:#fff}
 .form-note{font-size:.9rem;min-height:1.2rem}
