@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wholesale &amp; Custom Branding — Mulligans</title>
+  <meta name="description" content="Stock Mulligans in your halfway house or clubhouse with your course's logo on every sleeve. Free samples, wholesale pricing, and custom branding for golf courses and retailers." />
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="Mulligans" width="44" height="44" />
+      <span>Mulligans</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="wholesale.html" class="active">Wholesale</a>
+      <a href="flavors.html">Flavors</a>
+      <a href="locations.html">Locations</a>
+      <a class="btn btn-sm" href="#order">Get Free Samples</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <p class="kicker">Wholesale &amp; custom branding</p>
+    <h1>Your logo. Your sleeve. Your newest bestseller.</h1>
+    <p>Stock a healthy, high-margin snack in your halfway house or clubhouse — branded so it looks like you made it in-house. Zero kitchen work for you.</p>
+  </section>
+
+  <!-- BRANDING -->
+  <section class="section">
+    <div class="split">
+      <div class="split-copy" style="color:var(--ink)">
+        <p class="kicker">Make it your course's</p>
+        <h2 style="color:var(--green-900)">A snack that carries your brand around the course.</h2>
+        <p class="body">
+          We print your course's logo as the sleeve label, so every three-pack
+          looks in-house. Members grab a piece of the club they love — you get a
+          clean, healthy, high-margin snack with none of the prep.
+        </p>
+        <ul class="checklist" style="color:var(--ink)">
+          <li>Free custom logo sticker &amp; sleeve design</li>
+          <li>Free sample sleeves for your halfway house and clubhouse</li>
+          <li>Wholesale pricing — you set the retail markup</li>
+          <li>Small-batch fresh, delivered on a schedule you choose</li>
+        </ul>
+        <a class="btn" href="#order">Get Free Samples for Your Course</a>
+      </div>
+      <div class="split-art">
+        <div class="club-tile club-a"><span>YOUR<br/>CLUB</span></div>
+        <div class="club-tile club-b"><span>PINE<br/>RIDGE</span></div>
+        <div class="club-tile club-c"><span>THE<br/>LINKS</span></div>
+        <div class="club-tile club-d"><span>OAK<br/>HOLLOW</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHOLESALE PRICING -->
+  <section class="section section-alt">
+    <div class="section-head">
+      <p class="kicker">Wholesale pricing</p>
+      <h2>Simple tiers. Healthy margins for your shop.</h2>
+      <p class="section-note">Anchored at $6 retail, wholesale steps down with volume and never drops below $4.50 a sleeve. Custom branding is always free.</p>
+    </div>
+    <div class="pricing">
+      <article class="price-card">
+        <h3>Starter Samples</h3>
+        <p class="price">Free<span></span></p>
+        <p class="price-sub">for qualifying courses</p>
+        <ul>
+          <li>Branded sample sleeves</li>
+          <li>Custom logo mockup</li>
+          <li>No commitment</li>
+        </ul>
+        <a class="btn btn-ghost" href="#order">Request Samples</a>
+      </article>
+      <article class="price-card featured">
+        <div class="badge">Most popular</div>
+        <h3>Case Order</h3>
+        <p class="price">$5.00<span>/sleeve</span></p>
+        <p class="price-sub">12+ sleeves · you set retail (anchor $6)</p>
+        <ul>
+          <li>Free custom club branding</li>
+          <li>Reorder anytime</li>
+          <li>Volume drops the price further</li>
+        </ul>
+        <a class="btn" href="#order">Start a Case</a>
+      </article>
+      <article class="price-card">
+        <h3>Season Supply</h3>
+        <p class="price">from $4.50<span>/sleeve</span></p>
+        <p class="price-sub">weekly delivery · your day, all season</p>
+        <ul>
+          <li>Best per-sleeve pricing</li>
+          <li>Scheduled fresh delivery</li>
+          <li>Priority small-batch slots</li>
+        </ul>
+        <a class="btn btn-ghost" href="#order">Talk Volume</a>
+      </article>
+    </div>
+    <p class="pricing-foot">Retailers &amp; resellers welcome — tell us your setup in the form and we'll build a quote.</p>
+  </section>
+
+  <!-- ORDER / CONTACT -->
+  <section id="order" class="section">
+    <div class="order-box">
+      <div class="order-copy">
+        <p class="kicker">Let's talk</p>
+        <h2>Order or partner with Mulligans</h2>
+        <p class="body">Tell us who you are and we'll send a free branded sample sleeve and a quick quote. First round of course pitches is happening now.</p>
+        <p class="order-contact">Prefer email? <a href="mailto:hello@mulligansgolf.com">hello@mulligansgolf.com</a></p>
+      </div>
+      <form class="order-form" id="orderForm" action="https://formspree.io/f/xqernglp" method="POST">
+        <div class="field">
+          <label for="role">I'm a…</label>
+          <select id="role" name="I am a" required>
+            <option value="" disabled selected>Select one…</option>
+            <option>Individual golfer</option>
+            <option>Golf course / club</option>
+            <option>Retailer looking to resell</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" required placeholder="Jordan Fairway" />
+        </div>
+        <div class="field">
+          <label for="club">Club / course / company <span class="opt">(if any)</span></label>
+          <input id="club" name="club" placeholder="Pine Ridge Golf Club" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@club.com" />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="Phone Number" type="tel" required placeholder="(719) 555-0100" />
+        </div>
+        <div class="field">
+          <label for="interest">I'm interested in</label>
+          <select id="interest" name="interest">
+            <option>Free sample sleeves</option>
+            <option>A case order</option>
+            <option>Season volume pricing</option>
+            <option>Reselling Mulligans</option>
+            <option>Just keeping in touch</option>
+          </select>
+        </div>
+        <input type="hidden" name="_subject" value="New Mulligans lead 🏌️" />
+        <button class="btn btn-block" type="submit">Send it →</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="foot-brand">
+      <img src="assets/logo.svg" alt="Mulligans" width="52" height="52" />
+      <div><strong>Mulligans</strong><span>The best snack in golf.</span></div>
+    </div>
+    <div class="foot-links">
+      <a href="shop.html">Shop</a>
+      <a href="flavors.html">Flavors</a>
+      <a href="wholesale.html">Wholesale</a>
+      <a href="locations.html">Locations</a>
+      <a href="#order">Contact</a>
+    </div>
+    <p class="foot-fine">© 2026 Mulligans · Small-batch made with real ingredients · Subscriptions &amp; online checkout coming soon · <a href="mailto:hello@mulligansgolf.com" style="color:inherit">hello@mulligansgolf.com</a></p>
+  </footer>
+
+  <script>
+    var form = document.getElementById('orderForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var note = document.getElementById('formNote');
+      var first = (document.getElementById('name').value || 'there').split(' ')[0];
+      var club = document.getElementById('club').value || 'you';
+      // Formspree's Phone Number field is numeric-only — strip anything that isn't a digit
+      var phone = document.getElementById('phone');
+      phone.value = phone.value.replace(/\D/g, '');
+      note.textContent = "Sending…"; note.className = 'form-note';
+      fetch(form.action, { method:'POST', body:new FormData(form), headers:{Accept:'application/json'} })
+        .then(function(r){
+          if(r.ok){ note.textContent = "Thanks, " + first + "! We'll be in touch within a day."; note.className='form-note ok'; form.reset(); }
+          else { note.textContent = "Hmm, something went wrong — email us at hello@mulligansgolf.com."; note.className='form-note'; }
+        })
+        .catch(function(){ note.textContent = "Network hiccup — email us at hello@mulligansgolf.com."; note.className='form-note'; });
+    });
+  </script>
+</body>
+</html>

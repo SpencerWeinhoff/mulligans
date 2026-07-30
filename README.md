@@ -1,12 +1,18 @@
 # Mulligans 🏌️
 
-The best snack in golf — landing page + sales one-pager.
+The best snack in golf — multi-page marketing site + sales one-pager.
 
-## Files
-- `index.html` — landing page (hero, benefits, custom-branding pitch, nutrition, interactive pricing, lead form)
+## Pages (tabs)
+- `index.html` — **Home**: hero, why-us, featured product/nutrition, flavors teaser, partner-courses (coming soon), reviews (coming soon)
+- `shop.html` — **Shop**: two customer segments, product cards, interactive bulk + subscription pricing calculators (checkout "coming soon" → reserve via form)
+- `wholesale.html` — **Wholesale**: custom-branding pitch, wholesale pricing, and the working lead/order form (Formspree)
+- `flavors.html` — **Flavors**: Original (live) + 3 "coming soon" flavors, plus nutrition panel
+- `locations.html` — **Locations**: honest early-stage "coming soon" placeholder
 - `onepager.html` — printable club sales sheet → open it and click **Print / Save as PDF**
-- `styles.css` — landing page styles
+- `styles.css` — shared styles for all pages
 - `assets/logo.svg` — Mulligans emblem (also the favicon)
+
+The lead form lives on **wholesale.html** (`#order`); Shop and other pages link to it. Its Formspree "Phone Number" field is numeric-only, so the form strips non-digits before sending.
 
 ## Live site
 Hosted on GitHub Pages. Every push to `main` redeploys automatically.
@@ -14,8 +20,8 @@ Hosted on GitHub Pages. Every push to `main` redeploys automatically.
 ## To make the lead form email you (2 min)
 1. Go to [formspree.io](https://formspree.io) → sign up (free) → **New Form**, set the notify email to yours.
 2. Copy the form ID (looks like `xyzabcde`).
-3. In `index.html`, find `https://formspree.io/f/FORM_ID` and replace `FORM_ID` with your ID.
-4. Commit & push. Submissions now land in your inbox. Until then the form runs in harmless "demo mode."
+3. The form is already wired to a live Formspree endpoint in `wholesale.html`. To point it at a different form, replace the ID in the `action="https://formspree.io/f/..."` attribute.
+4. Commit & push. Submissions land in your inbox.
 
 ## To add real product photos
 Drop images into `assets/` — they appear automatically, and empty slots hide themselves:
@@ -29,4 +35,4 @@ Anchor **$6.00/sleeve** (3 balls). Hard floor **$4.50/sleeve**.
 - **One-time bulk:** 1–5 $6.00 · 6–11 $5.50 · 12–23 $5.00 · 24+ $4.75
 - **Weekly subscription:** 3–5 $5.50 · 6–11 $5.00 · 12–23 $4.75 · 24+ $4.50
 
-Edit the `bulkTiers` / `subTiers` arrays in `index.html` to change them.
+Edit the `bulkTiers` / `subTiers` arrays in `shop.html` to change them.

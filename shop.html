@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Mulligans</title>
+  <meta name="description" content="Shop Mulligans protein balls by the sleeve, by the case, or on a weekly season subscription. Online checkout coming soon." />
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="Mulligans" width="44" height="44" />
+      <span>Mulligans</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="wholesale.html">Wholesale</a>
+      <a href="flavors.html">Flavors</a>
+      <a href="locations.html">Locations</a>
+      <a class="btn btn-sm" href="wholesale.html#order">Get Free Samples</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <p class="kicker">Shop</p>
+    <h1>Fuel up. By the sleeve or by the season.</h1>
+    <p>Every sleeve is three golf-ball-sized protein balls. <b style="color:var(--gold)">Online checkout is coming soon</b> — for now, reserve your order or grab free samples and we'll set you up directly.</p>
+  </section>
+
+  <!-- SEGMENTS -->
+  <section class="section">
+    <div class="segments">
+      <div class="segment">
+        <h3>For golfers &amp; families</h3>
+        <p class="seg-sub">Keep a few sleeves in the bag, the cart, or the pantry.</p>
+        <ul class="checklist" style="margin-bottom:1.4rem">
+          <li>Single sleeves and multi-sleeve packs</li>
+          <li>Anchor price $6 a sleeve</li>
+          <li>Weekly home delivery on subscription</li>
+        </ul>
+        <a class="btn" href="#order-cta">Reserve an Order</a>
+      </div>
+      <div class="segment dark">
+        <h3>For courses, sims &amp; food managers</h3>
+        <p class="seg-sub">Stock the halfway house, clubhouse, or simulator lounge — with your logo on every sleeve.</p>
+        <ul class="checklist" style="margin-bottom:1.4rem">
+          <li>Wholesale case &amp; season pricing</li>
+          <li>Free custom club branding</li>
+          <li>Risk-free starter samples</li>
+        </ul>
+        <a class="btn" href="wholesale.html">See Wholesale</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section" style="padding-top:0">
+    <div class="section-head">
+      <p class="kicker">Ways to buy</p>
+      <h2>Anchored at $6 a sleeve. The more you order, the less you pay.</h2>
+      <p class="section-note">Pricing steps down with volume and never drops below $4.50 a sleeve.</p>
+    </div>
+    <div class="products">
+      <article class="product-card">
+        <div class="pc-art"><img src="assets/logo.svg" alt="A sleeve of Mulligans" /></div>
+        <h3>By the Sleeve</h3>
+        <p class="pc-price">$6.00<span>/sleeve</span></p>
+        <p>Three protein balls per sleeve. Our anchor price — perfect for a taste test or a quick grab.</p>
+        <a class="btn btn-ghost" href="#order-cta">Reserve</a>
+      </article>
+      <article class="product-card">
+        <div class="pc-art"><img src="assets/logo.svg" alt="A case of Mulligans" /></div>
+        <h3>One-Time Bulk</h3>
+        <p class="pc-price">from $4.75<span>/sleeve</span></p>
+        <p>Order a stack at once and the per-sleeve price drops. Great for stocking up or a small event.</p>
+        <a class="btn btn-ghost" href="#calc">See Volume Pricing</a>
+      </article>
+      <article class="product-card">
+        <div class="pc-art"><img src="assets/logo.svg" alt="Mulligans subscription" /></div>
+        <h3>Season Subscription</h3>
+        <p class="pc-price">from $4.50<span>/sleeve</span></p>
+        <p>Fresh delivery every week, on the day you choose, all season long. Our best per-sleeve price.</p>
+        <a class="btn btn-ghost" href="#calc">Build a Plan</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CALCULATORS -->
+  <section id="calc" class="section section-alt">
+    <div class="section-head">
+      <p class="kicker">Price it out</p>
+      <h2>Drag to your quantity — watch the price move.</h2>
+    </div>
+    <div class="pricing">
+      <article class="price-card featured">
+        <div class="badge">Bulk order</div>
+        <h3>One-Time Order</h3>
+        <p class="price"><span class="price-per" id="bulkPer">$6.00</span><span>/sleeve</span></p>
+        <p class="price-sub">Slide to your quantity — price drops with volume</p>
+        <div class="calc">
+          <label for="bulkQty"><span>Sleeves</span><b id="bulkQtyLabel">6</b></label>
+          <input type="range" id="bulkQty" min="1" max="60" step="1" value="6" />
+          <div class="calc-total"><span>Order total</span><strong id="bulkTotal">$33.00</strong></div>
+          <p class="calc-note" id="bulkTier">6–11 sleeves · $5.50 each</p>
+        </div>
+        <a class="btn" href="#order-cta">Reserve This Amount</a>
+      </article>
+      <article class="price-card">
+        <div class="badge badge-alt">Best value</div>
+        <h3>Season Subscription</h3>
+        <p class="price"><span class="price-per" id="subPer">$5.00</span><span>/sleeve</span></p>
+        <p class="price-sub">Fresh delivery every week, all season</p>
+        <div class="calc">
+          <label for="subQty"><span>Sleeves / week</span><b id="subQtyLabel">12</b></label>
+          <input type="range" id="subQty" min="3" max="60" step="1" value="12" />
+          <label for="subDay" class="calc-day-label">Delivery day</label>
+          <select id="subDay" class="calc-day">
+            <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+            <option selected>Thursday</option><option>Friday</option><option>Saturday</option>
+          </select>
+          <div class="calc-total"><span>Per week</span><strong id="subWeek">$60.00</strong></div>
+          <p class="calc-note" id="subTier">12–23/wk · $5.00 each · delivered Thursday</p>
+        </div>
+        <a class="btn btn-ghost" href="#order-cta">Start a Subscription</a>
+      </article>
+    </div>
+    <p class="pricing-foot">Preliminary intro pricing while we onboard our first customers. Direct online checkout is on the way.</p>
+  </section>
+
+  <!-- ORDER CTA -->
+  <section id="order-cta" class="cta-band">
+    <p class="kicker">Checkout coming soon</p>
+    <h2>Reserve your order or grab free samples.</h2>
+    <p style="max-width:52ch;margin:0 auto 1.6rem;color:rgba(247,243,233,.82)">Self-serve checkout isn't live yet — tell us what you want and we'll get sleeves to you directly and add you to the launch list.</p>
+    <a class="btn" href="wholesale.html#order">Reserve / Get Samples</a>
+  </section>
+
+  <footer class="footer">
+    <div class="foot-brand">
+      <img src="assets/logo.svg" alt="Mulligans" width="52" height="52" />
+      <div><strong>Mulligans</strong><span>The best snack in golf.</span></div>
+    </div>
+    <div class="foot-links">
+      <a href="shop.html">Shop</a>
+      <a href="flavors.html">Flavors</a>
+      <a href="wholesale.html">Wholesale</a>
+      <a href="locations.html">Locations</a>
+      <a href="wholesale.html#order">Contact</a>
+    </div>
+    <p class="foot-fine">© 2026 Mulligans · Small-batch made with real ingredients · Subscriptions &amp; online checkout coming soon · <a href="mailto:hello@mulligansgolf.com" style="color:inherit">hello@mulligansgolf.com</a></p>
+  </footer>
+
+  <script>
+    function money(n){ return '$' + n.toFixed(2); }
+    var bulkTiers = [
+      {min:24, price:4.75, label:'24+ sleeves'},
+      {min:12, price:5.00, label:'12–23 sleeves'},
+      {min:6,  price:5.50, label:'6–11 sleeves'},
+      {min:1,  price:6.00, label:'1–5 sleeves'}
+    ];
+    var subTiers = [
+      {min:24, price:4.50, label:'24+/wk'},
+      {min:12, price:4.75, label:'12–23/wk'},
+      {min:6,  price:5.00, label:'6–11/wk'},
+      {min:3,  price:5.50, label:'3–5/wk'}
+    ];
+    function tierFor(tiers, qty){ for(var i=0;i<tiers.length;i++){ if(qty>=tiers[i].min) return tiers[i]; } return tiers[tiers.length-1]; }
+
+    var bulkQty=document.getElementById('bulkQty');
+    function updateBulk(){
+      var q=+bulkQty.value, t=tierFor(bulkTiers,q);
+      document.getElementById('bulkQtyLabel').textContent=q;
+      document.getElementById('bulkPer').textContent=money(t.price);
+      document.getElementById('bulkTotal').textContent=money(q*t.price);
+      document.getElementById('bulkTier').textContent=t.label+' · '+money(t.price)+' each';
+    }
+    bulkQty.addEventListener('input',updateBulk); updateBulk();
+
+    var subQty=document.getElementById('subQty'), subDay=document.getElementById('subDay');
+    function updateSub(){
+      var q=+subQty.value, t=tierFor(subTiers,q), day=subDay.value;
+      document.getElementById('subQtyLabel').textContent=q;
+      document.getElementById('subPer').textContent=money(t.price);
+      document.getElementById('subWeek').textContent=money(q*t.price);
+      document.getElementById('subTier').textContent=t.label+' · '+money(t.price)+' each · delivered '+day;
+    }
+    subQty.addEventListener('input',updateSub); subDay.addEventListener('change',updateSub); updateSub();
+  </script>
+</body>
+</html>
