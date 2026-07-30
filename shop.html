@@ -72,8 +72,10 @@
         <div class="pc-art"><img src="assets/logo.svg" alt="A sleeve of Mulligans" /></div>
         <h3>By the Sleeve</h3>
         <p class="pc-price">$6.00<span>/sleeve</span></p>
-        <p>Three protein balls per sleeve. Our anchor price — perfect for a taste test or a quick grab.</p>
-        <a class="btn btn-ghost" href="#order-cta">Reserve</a>
+        <p>Three protein balls per sleeve. Our anchor price — perfect for a taste test or a quick grab. Buy more and volume pricing kicks in at checkout.</p>
+        <!-- Shopify Buy Button renders here once the store is connected (see SHOPIFY_SETUP.md) -->
+        <div id="buy-sleeve" class="buy-mount"></div>
+        <a class="btn btn-ghost reserve-fallback" href="#order-cta">Reserve</a>
       </article>
       <article class="product-card">
         <div class="pc-art"><img src="assets/logo.svg" alt="A case of Mulligans" /></div>
@@ -192,6 +194,51 @@
       document.getElementById('subTier').textContent=t.label+' · '+money(t.price)+' each · delivered '+day;
     }
     subQty.addEventListener('input',updateSub); subDay.addEventListener('change',updateSub); updateSub();
+  </script>
+
+  <!-- ============================================================
+       SHOPIFY CHECKOUT
+       Fill in the 3 values below after creating your store + product
+       (steps in SHOPIFY_SETUP.md). The Storefront access token is
+       designed to live in the browser, so it's safe in this file.
+       While these are blank, the "Reserve" fallback stays in place.
+       ============================================================ -->
+  <script>
+    var SHOPIFY = {
+      domain: '',                 // e.g. 'mulligans.myshopify.com'
+      storefrontAccessToken: '',  // Shopify → Sales channels → Buy Button → your token
+      sleeveProductId: ''         // the "Sleeve (3 balls)" product ID
+    };
+
+    (function initShopify(){
+      if(!SHOPIFY.domain || !SHOPIFY.storefrontAccessToken || !SHOPIFY.sleeveProductId) return;
+      var s = document.createElement('script');
+      s.src = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      s.onload = render;
+      document.head.appendChild(s);
+
+      function render(){
+        var client = ShopifyBuy.buildClient({ domain: SHOPIFY.domain, storefrontAccessToken: SHOPIFY.storefrontAccessToken });
+        ShopifyBuy.UI.onReady(client).then(function(ui){
+          document.querySelectorAll('.reserve-fallback').forEach(function(el){ el.style.display = 'none'; });
+          ui.createComponent('product', {
+            id: SHOPIFY.sleeveProductId,
+            node: document.getElementById('buy-sleeve'),
+            options: {
+              product: {
+                contents: { img:false, title:false, price:true },
+                text: { button: 'Add to cart' },
+                styles: {
+                  button: { 'background-color':'#2D6A4F', 'border-radius':'999px', ':hover':{ 'background-color':'#1B4332' } }
+                }
+              },
+              cart:   { styles: { button: { 'background-color':'#2D6A4F', 'border-radius':'999px' } } },
+              toggle: { styles: { toggle: { 'background-color':'#2D6A4F', ':hover':{ 'background-color':'#1B4332' } } } }
+            }
+          });
+        });
+      }
+    })();
   </script>
 </body>
 </html>
