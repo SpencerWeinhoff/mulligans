@@ -2,6 +2,19 @@
 
 The best snack in golf — multi-page marketing site + sales one-pager.
 
+## Front-door toggle (Coming Soon ↔ Full site)
+The live homepage (`index.html`) can be flipped between two versions without losing either:
+- **`coming-soon.html`** — simple one-page "launching soon" with the Formspree signup form
+- **`home.html`** — the full multi-tab site's homepage (always available at `home.html`, even in coming-soon mode)
+
+`index.html` is just a copy of whichever is active. To switch:
+```bash
+./toggle.sh coming   # front door → Coming Soon page
+./toggle.sh full     # front door → Full site
+git add -A && git commit -m "Toggle front door" && git push
+```
+The full site's other tabs (`shop.html`, `wholesale.html`, etc.) stay live regardless of the toggle.
+
 ## Pages (tabs)
 - `index.html` — **Home**: hero, why-us, featured product/nutrition, flavors teaser, partner-courses (coming soon), reviews (coming soon)
 - `shop.html` — **Shop**: two customer segments, product cards, interactive bulk + subscription pricing calculators (checkout "coming soon" → reserve via form)
